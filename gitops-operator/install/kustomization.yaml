@@ -1,0 +1,6 @@
+bases:
+- ../base
+
+resources:
+- machineconfig-cluster-role.yaml
+- openshift-gitops-machineconfig-clusterrolebinding.yaml
