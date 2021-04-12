@@ -30,13 +30,13 @@ oc get route argocd-cluster-server -n openshift-gitops -o jsonpath='{.spec.host}
 
 ## Deploying this Repo
 
-To configure your cluster to this repo run
+To configure your cluster based this repo, run:
 
 ```
 oc apply -k https://github.com/beelandc/openshift4-gitops-demo/gitops-config/config/overlays/default
 ```
 
-This will configure your server with the following.
+This will create ArgoCD applications that will configure your server with the following:
 
 Cluster Configurations:
 * machineconfigs applied -- Example Hardening configuration
