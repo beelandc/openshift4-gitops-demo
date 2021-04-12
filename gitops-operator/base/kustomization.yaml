@@ -1,4 +1,3 @@
 resources:
 - openshift-operators-namespace.yaml
-  #- pipelines-operator-subscription.yaml
 - gitops-operator-subscription.yaml
