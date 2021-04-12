@@ -1,7 +1,14 @@
-# Openshift Cluster Config
-Setting up an OpenShift cluster using Kustomize and ArgoCD. More info coming soon.
+# Openshift GitOps Demo
+Setting up an OpenShift cluster using Kustomize and ArgoCD.
 
 Content heavily borrowed from [Christianh814's OpenShift-cluster-config repo](https://github.com/christianh814/openshift-cluster-config):
+
+## Project Structure
+|                             Directory                             |                                                                                      Description                                                                                      |
+|:-----------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|                          gitops-operator                          | Contains Kustomize manifests that allow you to install the gitops operator using a single OC command                                                                                  |
+|                           gitops-config                           | Contains Kustomize manifests with the ArgoCD projects and applications used to configure your cluster. This allows you to configure your ArgoCD applications with a single OC command |
+|                             manifests                             | Contains Kustomize manifests with the actual cluster configuration YAML. These files are referenced by the ArgoCD Applications defined in the  gitops-config  directory               |
 
 ## Installing the OpenShift GitOps Operator
 
