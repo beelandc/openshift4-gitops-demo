@@ -3,8 +3,17 @@ kind: ClusterRole
 metadata:
   ## "namespace" omitted since ClusterRoles are not namespaced
   name: machineconfig-cluster-role
-Rules:
-  ## Specifies core api groups
+rules:
+  ## Specifies core api groups       
+- apiGroups: [""]
+  resources: ["resourcequotas"]
+  verbs: ["*"]
+- apiGroups: ["compliance.openshift.io"]
+  resources: ["scansettings"]
+  verbs: ["*"]
+- apiGroups: ["compliance.openshift.io"]
+  resources: ["scansettingbindings"]
+  verbs: ["*"]
 - apiGroups: ["machineconfiguration.openshift.io"] 
   resources: ["machineconfigs"]
   verbs: ["*"]
