@@ -1,7 +1,7 @@
 # Openshift Cluster Config
 Setting up an OpenShift cluster using Kustomize and ArgoCD. More info coming soon.
 
-HEAVILY borrowed from [Christianh814's OpenShift-cluster-config repo](https://github.com/christianh814/openshift-cluster-config):
+Content heavily borrowed from [Christianh814's OpenShift-cluster-config repo](https://github.com/christianh814/openshift-cluster-config):
 
 ## Installing the OpenShift GitOps Operator
 
