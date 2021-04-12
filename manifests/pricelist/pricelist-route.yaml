@@ -10,7 +10,6 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "8"
 spec:
-  host: ""
   port:
     targetPort: 8080
   to:
