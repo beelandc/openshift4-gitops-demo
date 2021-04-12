@@ -4,9 +4,21 @@ metadata:
   ## "namespace" omitted since ClusterRoles are not namespaced
   name: machineconfig-cluster-role
 rules:
-  ## Specifies core api groups       
+  ## Specifies core api groups
+- apiGroups: [""]
+  resources: ["services"]
+  verbs: ["*"]       
 - apiGroups: [""]
   resources: ["resourcequotas"]
+  verbs: ["*"]
+- apiGroups: ["route.openshift.io"]
+  resources: ["routes"]
+  verbs: ["*"]
+- apiGroups: ["apps"]
+  resources: ["deployments"]
+  verbs: ["*"]
+- apiGroups: ["batch"]
+  resources: ["jobs"]
   verbs: ["*"]
 - apiGroups: ["compliance.openshift.io"]
   resources: ["scansettings"]
